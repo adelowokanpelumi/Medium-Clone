@@ -4206,6 +4206,7 @@ nav.nav-extended .nav-wrapper {
   width: 500px;
 }
 
+
 nav.nav-extended .nav-content {
   position: relative;
   line-height: normal;
@@ -4773,7 +4774,7 @@ small {
 
 .card.horizontal .card-image {
   max-width: 50%;
-  height: 3spx;
+  height: 100%;
   width: 100%;
 }
 
@@ -4794,6 +4795,7 @@ small {
       -ms-flex: 1;
           flex: 1;
   position: relative;
+  height: 100%;
   width: 100%;
 }
 
@@ -4801,7 +4803,8 @@ small {
   -webkit-flex-grow: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-          height:;
+          height:100%;
+          width: 100%;
 }
 
 .card.sticky-action .card-action {
