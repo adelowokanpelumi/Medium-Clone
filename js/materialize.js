@@ -19,7 +19,25 @@ if (typeof(jQuery) === 'undefined') {
     jQuery = $;
   }
 }
-;/*
+;
+
+$(document).ready(function(){
+  var scrollTop = 0;
+  $(window).scroll(function(){
+    scrollTop = $(window).scrollTop();
+     $('.nav').html(scrollTop);
+    
+    if (scrollTop >= 100) {
+      $('nav').addClass('scrolled-nav');
+    } else if (scrollTop < 100) {
+      $('nav').removeClass('scrolled-nav');
+    } 
+    
+  }); 
+  
+});
+
+/*
  * jQuery Easing v1.3 - http://gsgd.co.uk/sandbox/jquery/easing/
  *
  * Uses the built in easing capabilities added In jQuery 1.1
